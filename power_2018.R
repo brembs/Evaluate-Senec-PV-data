@@ -16,7 +16,7 @@ if (exists("strom")) rm(strom) #delete any old dataframe
 
 files <- (Sys.glob(pathtofiles)) #read all filenames
 
-for (file in files){2016
+for (file in files){
   
   # if the merged dataset doesn't exist, create it
   if (!exists("strom")){
