@@ -1,5 +1,8 @@
 ###Calculate photovoltaic values from SENEC CSV files
 
+rm(list=ls()) #clean memory
+gc()          #collect garbage
+
 ##Dieses Script erwartet, dass alle CSV Dateien eines Jahres in einem Verzeichnis liegen
 ##Die Verzeichnisse mit den einzelnen Jahren liegen in einem Verzeichnis das hier spezifiziert wird:
 
@@ -12,11 +15,9 @@ pathtofiles <- paste(year,'/*.csv', sep="")
 
 #read all CSV files in folder and put them in one dataframe
 
-if (exists("strom")) rm(strom) #delete any old dataframe
-
 files <- (Sys.glob(pathtofiles)) #read all filenames
 
-for (file in files){2016
+for (file in files){
   
   # if the merged dataset doesn't exist, create it
   if (!exists("strom")){
