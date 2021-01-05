@@ -9,7 +9,7 @@ gc()          #collect garbage
 setwd("F:/PV-Anlage")
 
 #Eingabe des Jahres, für das die Auswertung gemacht werden soll
-year <- 2020   # set year to compute
+year <- 2021   # set year to compute
 pathtofiles <- paste(year,'/*.csv', sep="")
 
 #read all CSV files in folder and put them in one dataframe
