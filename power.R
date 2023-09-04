@@ -9,7 +9,7 @@ gc()          #collect garbage
 setwd("F:/PV-Anlage")
 
 #Eingabe des Jahres, für das die Auswertung gemacht werden soll
-year <- 2021   # set year to compute
+year <- 2023   # set year to compute
 pathtofiles <- paste(year,'/*.csv', sep="")
 
 #read all CSV files in folder and put them in one dataframe
@@ -53,7 +53,7 @@ text(bp_simple,0,round(Werte,1),cex=1,pos=3)
 #save graph as PNG
 
 filename <- paste(year,'_simple.png', sep="")
-dev.copy(png,filename,width = 800)
+dev.copy(png,filename,width = 1600, height = 800)
 dev.off()
 
 #plot stacked graph
@@ -68,5 +68,5 @@ barplot(as.matrix(sgraph), ylab=yaxis, col = colors, legend.text = TRUE,
 
 #save graph as PNG
 filename <- paste(year,'_stacked.png', sep="")
-dev.copy(png,filename,width = 600)
+dev.copy(png,filename,width = 1200)
 dev.off()
