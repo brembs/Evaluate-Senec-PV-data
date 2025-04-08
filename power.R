@@ -6,10 +6,10 @@ gc()          #collect garbage
 ##Dieses Script erwartet, dass alle CSV Dateien eines Jahres in einem Verzeichnis liegen
 ##Die Verzeichnisse mit den einzelnen Jahren liegen in einem Verzeichnis das hier spezifiziert wird:
 
-setwd("F:/PV-Anlage")
+setwd("D:/private/PV-Anlage")
 
-#Eingabe des Jahres, für das die Auswertung gemacht werden soll
-year <- 2023   # set year to compute
+#Eingabe des Jahres, f?r das die Auswertung gemacht werden soll
+year <- 2025   # set year to compute
 pathtofiles <- paste(year,'/*.csv', sep="")
 
 #read all CSV files in folder and put them in one dataframe
